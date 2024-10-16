@@ -1,0 +1,178 @@
+<!DOCTYPE html >
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Portafolio</title>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body id="">
+
+<header>
+    <h1>Mi Portafolio</h1>
+</header>
+<div id="container">
+    <nav>
+        <ul>
+            <div class="dropdown">
+                <button class="dropbtn">☰</button>
+                <div class="dropdown-content">
+                    <a href="#sobre-mi">Sobre mi</a>
+                    <a href="#gallery">Proyecto</a>
+                    <a href="#contacto-2">Contacto</a>
+                </div>
+            </div>
+            <button id="dark-mode-toggle" onclick="toggleDarkMode()">Modo Nocturno</button>
+        </ul>
+    </nav>
+</div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Presentación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="sobre-mi">
+        <div class="container">
+            <header>
+                <h1>¡Bienvenido a Mi Página de Presentación!</h1>
+                <p>Un vistazo a quién soy, qué hago y mis proyectos más destacados.</p>
+            </header>
+
+            <section id="perfil">
+                <div class="foto">
+                    <img src="icons/einar.png" alt="Foto de Einar" width="300" height="300">
+                </div>
+                <div class="descripcion">
+                    <h2>Sobre mí</h2>
+                    <p class="estilo-p">
+                        Hola, soy <strong>Einar Valdivia</strong>, un desarrollador web apasionado por la creación de experiencias 
+                        digitales impactantes y visualmente atractivas. Me especializo en <em>Frontend</em> y <em>Backend</em>, 
+                        utilizando las últimas tecnologías para diseñar soluciones innovadoras.
+                    </p>
+                    <p class="estilo-p">
+                        Soy un entusiasta del aprendizaje continuo y la exploración de nuevas herramientas, siempre buscando 
+                        mejorar mis habilidades y colaborar en proyectos que marquen la diferencia.
+                    </p>
+                    <ul>
+                        <li>🎯 <b>Habilidades:</b> HTML, CSS, JavaScript, React, Node.js, PHP</li>
+                        <li>🌱 <b>Actualmente aprendiendo:</b> Docker y DevOps</li>
+                        <li>🌍 <b>Idiomas:</b> Español (Nativo), Inglés (Avanzado)</li>
+                        <li>📍 <b>Ubicación:</b> Trinidad, Beni, Bolivia</li>
+                    </ul>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="proyectos">
+                <h2>Mis Proyectos</h2>
+                <p class="estilo-p">
+                    A lo largo de mi carrera, he trabajado en diversos proyectos emocionantes que 
+                    me han permitido colaborar con equipos talentosos. ¡Aquí tienes algunos ejemplos destacados!
+                </p>
+
+                <div class="proyectos-grid">
+                    <div class="proyecto-card">
+                        <h3>Proyecto 1: Tienda Virtual</h3>
+                        <p>E-commerce desarrollado con React y Node.js.</p>
+                        <a href="#">Ver más →</a>
+                    </div>
+
+                    <div class="proyecto-card">
+                        <h3>Proyecto 2: Blog Personal</h3>
+                        <p>Plataforma de blogging con autenticación y backend en PHP.</p>
+                        <a href="#">Ver más →</a>
+                    </div>
+
+                    <div class="proyecto-card">
+                        <h3>Proyecto 3: Sistema de Gestión</h3>
+                        <p>Aplicación para gestionar inventarios con Laravel.</p>
+                        <a href="#">Ver más →</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+</body>
+</html>
+
+<section id="gallery">
+    <h2>Galería de Proyectos</h2>
+    <div class="gallery-container ">
+        
+        <figure class="gallery-item">
+            <a target="proyecto-1" href="proyecto-1.html">
+                <img src="icons/soft.gif" alt="Cinque Terre" >
+              </a>
+              <div class="desc">
+                <h3>Proyecto de software</h3>
+                <h3>Desarrolo de Softwasre Para la empresa de Transporte Minto Itonama</h3>
+              </div>
+        </figure>        
+
+        <figure class="gallery-item">
+            <a target="_blank" href="pr_4-Estructura-1.html">
+                <img src="icons/estar.gif" alt="Cinque Terre"  >
+            </a>
+            <div class="desc">
+                <h3>Estructura de Datos I</h3>
+                <h3>Estudio de Start Up en la ciudad de Trinidad</h3>
+            </div>
+        </figure>
+
+        <figure class="gallery-item">
+            <a target="_blank" href="pr-estructura_2.html">
+                <img src="icons/arbol.gif" alt="Cinque Terre"  >
+            </a>
+            <div class="desc">
+                <h3>Estructura de Datos II</h3>
+                <h3>Programa aplicando arbloes binario</h3>
+            </div>
+        </figure>
+
+        <figure class="gallery-item">
+            <a target="_blank" href="sistemas-informacion-II.html">
+                <img src="icons/ip.gif" alt="Cinque Terre"  >
+            </a>
+            <div class="desc">
+                <h3>Sistemas De Informacion II</h3>
+                <h3>Desarrollo de Telefonia IP con FreePBX</h3>
+            </div>
+        </figure>
+        <!-- ... otras imágenes ... -->
+    </div>
+    <nav class="gallery-navigation">
+        <button class="nav-button prev-button">Anterior</button>
+        <button class="nav-button next-button">Siguiente</button>
+    </nav>
+</section>
+
+
+<section id="contacto-2">
+    <h2>Contacto</h2>
+    <form id="contact-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>Derechos de autor &copy; 2024 | Nombre</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
